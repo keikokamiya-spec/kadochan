@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>かどちゃん | お好み焼き居酒屋 — 神奈川県海老名市</title>
+  <meta name="description" content="神奈川県海老名市門沢橋にある、温かい鉄板と心のこもったお好み焼きが自慢の居酒屋。門沢橋駅から徒歩3分。17:30より営業。">
+  <meta property="og:title" content="かどちゃん | お好み焼き居酒屋">
+  <meta property="og:description" content="人生に翻弄される日があっても、ここに来れば『我が家』に戻れる。神奈川県海老名市門沢橋の一軒家お好み焼き居酒屋。">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory:   '#FFFDF9',
+            beige:   '#FDF5E6',
+            moccasin:'#FFE4B5',
+            brand:   '#E67E22',
+            'brand-dark': '#D35400',
+            brown:   '#5C3317',
+            'text-main': '#3D2B1F',
+            'text-sub':  '#8B6914',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-ivory">
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="nav" class="py-4 px-6 md:px-12">
+  <div class="max-w-5xl mx-auto flex items-center justify-between">
+    <a href="#hero" class="nav-logo">かどちゃん</a>
+
+    <!-- Desktop links -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#concept">想い</a>
+      <a href="#master">マスター</a>
+      <a href="#menu">メニュー</a>
+      <a href="#gallery">ギャラリー</a>
+      <a href="#info" class="btn-primary text-xs py-2 px-5">アクセス</a>
+    </div>
+
+    <!-- Hamburger -->
+    <div id="hamburger" class="md:hidden">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu">
+    <a href="#concept">想い</a>
+    <a href="#master">マスターについて</a>
+    <a href="#menu">メニュー</a>
+    <a href="#gallery">ギャラリー</a>
+    <a href="#info">アクセス・店舗情報</a>
+  </div>
+</nav>
+
+
+<!-- ============================================================
+     SECTION 1: HERO
+     ============================================================ -->
+<section id="hero">
+  <!-- Decorative circles -->
+  <div class="hero-circle hero-circle-1"></div>
+  <div class="hero-circle hero-circle-2"></div>
+
+  <!-- Steam -->
+  <div class="steam-container">
+    <div class="steam-line"></div>
+    <div class="steam-line"></div>
+    <div class="steam-line"></div>
+    <div class="steam-line"></div>
+    <div class="steam-line"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-6 max-w-2xl mx-auto">
+    <p class="hero-en-quote text-sm md:text-base mb-6 fade-in">
+      I feel at home.
+    </p>
+
+    <div class="hero-divider"></div>
+
+    <h1 class="hero-main-copy text-2xl md:text-4xl mt-6 mb-4 fade-in delay-1">
+      人生に翻弄される日があっても、<br>
+      ここに来れば<span class="text-brand">『我が家』</span>に戻れる。
+    </h1>
+
+    <p class="text-sm md:text-base text-text-sub leading-relaxed mt-6 mb-8 fade-in delay-2"
+       style="font-family:'Noto Sans JP',sans-serif;">
+      お好み焼き居酒屋　かどちゃん<br>
+      <span class="text-xs">神奈川県海老名市門沢橋　一軒家レストラン</span>
+    </p>
+
+    <div class="fade-in delay-3">
+      <a href="#info" class="btn-primary">今日も来てね</a>
+    </div>
+
+    <!-- Open hours badge -->
+    <div class="mt-10 inline-flex items-center gap-2 bg-white bg-opacity-70 rounded-full px-5 py-2 shadow-sm fade-in delay-4">
+      <span class="w-2 h-2 rounded-full bg-brand animate-pulse"></span>
+      <span class="text-xs text-text-main" style="letter-spacing:0.1em;">営業時間　17:30 〜 24:00</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- Wave divider -->
+<div class="wave-divider" style="margin-top:-2px; background:#FDF5E6;">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="height:60px;">
+    <path d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z" fill="#FFFDF9"/>
+  </svg>
+</div>
+
+
+<!-- ============================================================
+     SECTION 2: CONCEPT
+     ============================================================ -->
+<section id="concept" class="py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Text -->
+      <div>
+        <p class="section-label fade-in">Concept</p>
+        <h2 class="section-title text-2xl md:text-3xl fade-in delay-1">
+          目の前にある<br>大切なものを、<br>感じる時間。
+        </h2>
+        <div class="section-underline fade-in delay-1"></div>
+
+        <blockquote class="concept-quote mt-8 text-base md:text-lg fade-in delay-2">
+          忙しすぎて、目の前にある大切なものさえ<br>
+          見失いそうな時——<br>
+          温かい鉄板を囲んで、<br>
+          ただ<span class="text-brand font-bold">自分に戻る時間</span>を過ごしてほしい。<br>
+          そんな想いでお好み焼きを焼いています。
+        </blockquote>
+        <p class="concept-en mt-4 fade-in delay-2">
+          "sometimes you can't even see what's right in front of you"
+        </p>
+
+        <div class="mt-10 fade-in delay-3">
+          <a href="#menu" class="btn-outline">メニューを見る</a>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="fade-in delay-2">
+        <div class="relative">
+          <div style="border-radius:1.5rem; overflow:hidden; box-shadow: 0 12px 40px rgba(92,51,23,0.18);">
+            <img src="メニュー表.JPG" alt="かどちゃんのメニュー表"
+                 style="width:100%; height:420px; object-fit:cover;">
+          </div>
+          <!-- Decorative badge -->
+          <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-md px-5 py-3">
+            <p style="font-family:'Noto Serif JP',serif; font-size:0.75rem; color:#E67E22; letter-spacing:0.1em;">一軒家レストラン</p>
+            <p style="font-family:'Noto Serif JP',serif; font-size:1rem; font-weight:700; color:#3D2B1F;">門沢橋駅 徒歩3分</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 3: MASTER
+     ============================================================ -->
+<section id="master" class="py-24 px-6">
+  <div class="max-w-5xl mx-auto relative z-10">
+
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <p class="section-label fade-in" style="color:#E67E22;">Master</p>
+      <h2 class="section-title light text-2xl md:text-3xl fade-in delay-1">
+        マスターを、五感で感じる。
+      </h2>
+      <div class="section-underline center fade-in delay-1"></div>
+    </div>
+
+    <!-- 5 senses cards -->
+    <div class="grid md:grid-cols-3 gap-6 mb-16">
+
+      <div class="master-card fade-in delay-1">
+        <span class="icon">👁</span>
+        <h3>— 視覚 —</h3>
+        <p>
+          鉄板の温度を見極める、真剣な眼差し。<br>
+          長年の経験が、ただ一枚の仕上がりに宿る。
+        </p>
+      </div>
+
+      <div class="master-card fade-in delay-2">
+        <span class="icon">👂</span>
+        <h3>— 聴覚 —</h3>
+        <p>
+          <span class="onomatopoeia">ジュー…</span><br>
+          鉄板に落ちた生地が奏でる音。<br>
+          その音を聞けば、お腹が鳴る。
+        </p>
+      </div>
+
+      <div class="master-card fade-in delay-3">
+        <span class="icon">✋</span>
+        <h3>— 触覚 —</h3>
+        <p>
+          長年使い込まれたヘラを握る手。<br>
+          その重さと温もりが、<br>一枚一枚に刻まれている。
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Master quote box -->
+    <div class="text-center fade-in delay-2">
+      <p style="font-size:0.75rem; letter-spacing:0.15em; color:#FFE4B5; margin-bottom:1rem; font-family:'Noto Sans JP',sans-serif;">
+        ─ マスターのひと言 ─
+      </p>
+      <div id="master-quote-box">
+        <p id="quote-text"></p>
+      </div>
+      <div class="mt-6" style="font-size:0.75rem; color:#8B6914; letter-spacing:0.1em;">
+        かどちゃん マスター
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Wave divider -->
+<div class="wave-divider" style="background:#FFFDF9;">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="height:60px;">
+    <path d="M0,30 C360,0 1080,60 1440,30 L1440,60 L0,60 Z" fill="#3D2B1F"/>
+  </svg>
+</div>
+
+
+<!-- ============================================================
+     SECTION 4: MENU
+     ============================================================ -->
+<section id="menu" class="py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-6">
+      <p class="section-label fade-in">Menu</p>
+      <h2 class="section-title text-2xl md:text-3xl fade-in delay-1">
+        心もお腹も、満たされる一枚を。
+      </h2>
+      <div class="section-underline center fade-in delay-1"></div>
+    </div>
+
+    <!-- Intro -->
+    <div class="text-center mt-8 mb-14 fade-in delay-2">
+      <p class="menu-intro text-sm md:text-base">
+        ただ、愛が必要な日もある。<br>
+        マスター特製の、心を込めた一皿をどうぞ。
+      </p>
+      <p class="menu-intro en mt-2">"I just needed love."</p>
+    </div>
+
+    <!-- Menu grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="menu-card fade-in delay-1">
+        <div style="overflow:hidden;">
+          <img src="お好み焼きミックス.JPG" alt="お好み焼きミックス">
+        </div>
+        <div class="menu-card-body">
+          <p class="category">OKONOMIYAKI</p>
+          <h3>お好み焼き ミックス</h3>
+          <p>豚・イカ・エビの贅沢な組み合わせ。マスターが磨き上げた生地と特製ソースで仕上げた、かどちゃんの看板メニュー。</p>
+        </div>
+      </div>
+
+      <div class="menu-card fade-in delay-2">
+        <div style="overflow:hidden;">
+          <img src="おでん.JPG" alt="おでん盛り合わせ">
+        </div>
+        <div class="menu-card-body">
+          <p class="category">ODEN</p>
+          <h3>おでん盛り合わせ</h3>
+          <p>じっくり煮込んだ出汁が染み渡る、冬の夜に寄り添う一品。体の芯から温まります。</p>
+        </div>
+      </div>
+
+      <div class="menu-card fade-in delay-3">
+        <div style="overflow:hidden;">
+          <img src="しっとり極み鴨ロース..png" alt="しっとり極み鴨ロース">
+        </div>
+        <div class="menu-card-body">
+          <p class="category">SPECIALTY</p>
+          <h3>しっとり極み鴨ロース</h3>
+          <p>低温でじっくり火入れした鴨ロース。しっとりとした食感と深い旨みが、一口ごとに広がります。</p>
+        </div>
+      </div>
+
+      <div class="menu-card fade-in delay-1">
+        <div style="overflow:hidden;">
+          <img src="ホタテバター焼き.JPG" alt="ホタテバター焼き">
+        </div>
+        <div class="menu-card-body">
+          <p class="category">TEPPAN</p>
+          <h3>ホタテバター焼き</h3>
+          <p>熱した鉄板で豪快に焼き上げる、香ばしいバターの香り。プリっとした食感がたまりません。</p>
+        </div>
+      </div>
+
+      <div class="menu-card fade-in delay-2">
+        <div style="overflow:hidden;">
+          <img src="熟成牛ハラミ.png" alt="熟成牛ハラミ">
+        </div>
+        <div class="menu-card-body">
+          <p class="category">MEAT</p>
+          <h3>熟成牛ハラミ</h3>
+          <p>丁寧に熟成させた牛ハラミを鉄板で。柔らかく、深い旨みが凝縮された、肉好き必食の一皿。</p>
+        </div>
+      </div>
+
+      <div class="menu-card fade-in delay-3">
+        <div style="overflow:hidden;">
+          <img src="赤鶏のたたき.png" alt="赤鶏のたたき">
+        </div>
+        <div class="menu-card-body">
+          <p class="category">FRESH</p>
+          <h3>赤鶏のたたき</h3>
+          <p>鮮度と素材にこだわった赤鶏を、絶妙な火加減でたたきに。ポン酢との相性が絶品です。</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Note -->
+    <p class="text-center text-xs text-text-sub mt-10 fade-in" style="letter-spacing:0.06em; line-height:1.9;">
+      ※ メニューは季節・仕入れにより変更になる場合がございます。<br>
+      最新のメニューは店頭にてご確認ください。
+    </p>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 5: GALLERY
+     ============================================================ -->
+<section id="gallery" class="py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="text-center mb-14">
+      <p class="section-label fade-in">Gallery</p>
+      <h2 class="section-title text-2xl md:text-3xl fade-in delay-1">
+        かどちゃんの、温もりを。
+      </h2>
+      <div class="section-underline center fade-in delay-1"></div>
+    </div>
+
+    <div class="gallery-grid fade-in delay-1">
+      <div class="gallery-item">
+        <img src="お好み焼きミックス.JPG" alt="お好み焼きミックス">
+      </div>
+      <div class="gallery-item">
+        <img src="熟成牛ハラミ.png" alt="熟成牛ハラミ">
+      </div>
+      <div class="gallery-item">
+        <img src="ホタテバター焼き.JPG" alt="ホタテバター焼き">
+      </div>
+      <div class="gallery-item">
+        <img src="おでん.JPG" alt="おでん">
+      </div>
+      <div class="gallery-item">
+        <img src="赤鶏のたたき.png" alt="赤鶏のたたき">
+      </div>
+      <div class="gallery-item">
+        <img src="しっとり極み鴨ロース..png" alt="鴨ロース">
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_6392.JPG" alt="かどちゃんの様子">
+      </div>
+      <div class="gallery-item">
+        <img src="IMG_6393.JPG" alt="かどちゃんの様子">
+      </div>
+      <div class="gallery-item">
+        <img src="メニュー表.JPG" alt="メニュー表">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Wave divider -->
+<div class="wave-divider" style="background:#FFFDF9;">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="height:60px;">
+    <path d="M0,20 C360,50 1080,0 1440,30 L1440,0 L0,0 Z" fill="#FFE4B5" opacity="0.6"/>
+  </svg>
+</div>
+
+
+<!-- ============================================================
+     SECTION 6: INFO
+     ============================================================ -->
+<section id="info" class="py-24 px-6 bg-ivory">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="text-center mb-14">
+      <p class="section-label fade-in">Access &amp; Info</p>
+      <h2 class="section-title text-2xl md:text-3xl fade-in delay-1">
+        店舗情報・アクセス
+      </h2>
+      <div class="section-underline center fade-in delay-1"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+
+      <!-- Info table -->
+      <div class="fade-in delay-1">
+        <table class="info-table">
+          <tr>
+            <th>店名</th>
+            <td>
+              <span style="font-family:'Noto Serif JP',serif; font-size:1.1rem; font-weight:700;">かどちゃん</span><br>
+              <span class="text-xs text-text-sub">お好み焼き・居酒屋</span>
+            </td>
+          </tr>
+          <tr>
+            <th>住所</th>
+            <td>
+              〒243-0413<br>
+              神奈川県海老名市門沢橋2-6-10<br>
+              <a href="https://maps.google.com/?q=神奈川県海老名市門沢橋2-6-10"
+                 target="_blank" rel="noopener"
+                 class="text-brand text-xs underline mt-1 inline-block">
+                Google マップで開く
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>最寄り駅</th>
+            <td>
+              相模鉄道 門沢橋駅<br>
+              <span class="info-badge">徒歩約3分（227m）</span>
+            </td>
+          </tr>
+          <tr>
+            <th>営業時間</th>
+            <td>
+              17:30 〜 24:00<br>
+              <span class="info-badge">※日によって変更の可能性あり</span>
+            </td>
+          </tr>
+          <tr>
+            <th>定休日</th>
+            <td>
+              不定休<br>
+              <span class="info-badge">事前にご確認ください</span>
+            </td>
+          </tr>
+          <tr>
+            <th>駐車場</th>
+            <td>
+              あり<br>
+              <span class="text-xs text-text-sub">店舗横に複数台駐車可能</span>
+            </td>
+          </tr>
+          <tr>
+            <th>施設</th>
+            <td>一軒家レストラン</td>
+          </tr>
+        </table>
+
+        <p class="text-xs text-text-sub mt-6 leading-loose fade-in delay-2">
+          ※ 営業時間・定休日は変更となる場合がございます。<br>
+          ご来店の際は事前にご確認いただくことをおすすめします。
+        </p>
+      </div>
+
+      <!-- Map -->
+      <div class="fade-in delay-2">
+        <div class="map-wrapper">
+          <iframe
+            src="https://maps.google.com/maps?q=神奈川県海老名市門沢橋2-6-10&output=embed&hl=ja&z=16"
+            width="100%"
+            height="380"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="かどちゃん アクセスマップ">
+          </iframe>
+        </div>
+        <p class="text-xs text-center text-text-sub mt-3" style="letter-spacing:0.06em;">
+          神奈川県海老名市門沢橋2-6-10
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="py-16 px-6">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10"
+         style="border-bottom: 1px solid rgba(255,228,181,0.2);">
+
+      <!-- Brand -->
+      <div>
+        <p class="footer-logo">かどちゃん</p>
+        <p class="footer-en mt-1">Okonomiyaki &amp; Izakaya</p>
+        <p class="text-xs mt-3 leading-loose" style="color:#FFE4B5; opacity:0.6;">
+          神奈川県海老名市門沢橋2-6-10<br>
+          営業：17:30 〜 24:00
+        </p>
+      </div>
+
+      <!-- Nav -->
+      <nav class="flex flex-col gap-3">
+        <a href="#concept">想い</a>
+        <a href="#master">マスターについて</a>
+        <a href="#menu">メニュー</a>
+        <a href="#gallery">ギャラリー</a>
+        <a href="#info">アクセス・店舗情報</a>
+      </nav>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-8">
+      <p class="copyright">&copy; 2025 かどちゃん. All rights reserved.</p>
+      <p class="footer-en text-xs" style="color:#E67E22; opacity:0.7;">
+        "I feel at home."
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     FLOATING MASTER QUOTE
+     ============================================================ -->
+<div id="floating-quote" class="hidden">
+  <div class="floating-bubble">
+    <div id="floating-close">✕</div>
+    <p id="floating-text"></p>
+    <p class="from">— かどちゃん マスター</p>
+  </div>
+</div>
+
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="拡大表示">
+</div>
+
+
+<!-- Script -->
+<script src="script.js"></script>
+
+</body>
+</html>
